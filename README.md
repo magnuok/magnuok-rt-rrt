@@ -10,7 +10,7 @@ Note: Tentativ.
 
 
 ## Dependencies
-![alt text](https://github.com/magnuok/magnuok-rt-rrt/blob/master/images/screenshot_rviz.png)
+![alt text](https://github.com/magnuok/magnuok-rt-rrt/blob/master/images/rospackgraph.png)
 
 
 
