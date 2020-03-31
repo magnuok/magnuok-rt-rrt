@@ -1,0 +1,14 @@
+<launch>
+<!-- --> <param name="use_sim_time" value="false" /> 
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rt_rrt)/cfg/maps/map2.yaml" />
+
+
+  <!-- Rviz -->
+ <node type="rviz" name="rviz" pkg="rviz" args="-d $(find rt_rrt)/cfg/rviz/pp.rviz" />
+
+  <!-- RRT node -->
+  <node name="RRT" pkg="rt_rrt" type="rrt_star.py" respawn="true" output="screen" cwd="node" />
+
+</launch>
